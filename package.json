@@ -1,0 +1,21 @@
+{
+  "name": "spotify-integration-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "vercel build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongodb": "^4.1.4",
+    "pug": "^3.0.2",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {}
+}

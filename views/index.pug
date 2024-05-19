@@ -1,0 +1,12 @@
+
+extends layout
+block content
+
+  .desktopMessenger-wrapper
+  .iphone-header
+  .iphone-screen
+    .messages-container
+      #message-output
+  script#tracks-data(type='application/json').
+    !{JSON.stringify(tracks)}
+  script(src='/javascripts/textGen.js')
