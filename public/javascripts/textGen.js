@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var intro6 = "And everyone gets to consume the stories of their choosing";
     var intro7 = "As for me, though";
     var intro8 = "I'm a computer";
-    var intro9 = "And all that nonsense about judging others doesn't apply to me";
+    var intro9 = "So all that nonsense about judging others doesn't apply to me";
     var intro10 = "I actually only exist to judge your music taste";
     var intro11 = "With that being said...";
 
