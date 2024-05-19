@@ -140,7 +140,7 @@ app.get('/auth/spotify/callback', async (req, res) => {
 
 app.get('/top/:type', async (req, res) => {
   const type = req.params.type;
-  const time_range = req.query.time_range || 'medium_term';
+  const time_range = req.query.time_range || 'short_term';
   const limit = 50;
   const offset = req.query.offset || 0;
 
