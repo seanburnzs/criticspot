@@ -1,6 +1,6 @@
 # Project Description
 
-Critic.Spot is a Spotify integration web application, it's a music tool designed to analyze a user's Spotify listening habits and provide critiques filled with wit, banter, and satirical humor.
+criticspot is a Spotify integration web application, it's a music tool designed to analyze a user's Spotify listening habits and provide critiques filled with wit, banter, and satirical humor.
 
 ## Development Stage
 
