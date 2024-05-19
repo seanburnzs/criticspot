@@ -20,6 +20,9 @@ const client = new MongoClient(uri, {
   tls: true,
   tlsAllowInvalidCertificates: false,
   useUnifiedTopology: true,
+  keepAlive: true,
+  connectTimeoutMS: 30000,
+  socketTimeoutMS: 45000,
 });
 
 async function run() {
@@ -48,6 +51,10 @@ app.use(session({
     saveUninitialized: false,
     cookie: { secure: false, httpOnly: true }
 }));
+
+const generateRandomString = (length) => {
+  return crypto.randomBytes(Math.ceil(length / 2)).toString('hex').slice(0, length);
+};
 
 const whitelist = ['*'];
 app.use((req, res, next) => {
@@ -167,7 +174,6 @@ app.get('/top/:type', async (req, res) => {
   }
 });
 
-// Middleware to log errors
 app.use((err, req, res, next) => {
   console.error('Internal Server Error:', err);
   res.status(500).send('Internal Server Error');
