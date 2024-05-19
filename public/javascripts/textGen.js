@@ -204,11 +204,11 @@ document.addEventListener("DOMContentLoaded", function () {
             messages.push(`I guess listening to ${getSongName(tracks, 6)} keeps things interesting.`);
             messages.push('Probably a very rare thing for you.');
             messages.push('I do see a few smaller artists and songs in here though.');
-            messages.push(`Do you actually like ${getArtistName(tracks, 9)}?`);
+            messages.push(`But do you actually like ${getArtistName(tracks, 9)}?`);
             messages.push(`Or do you just listen to them to make yourself seem more interesting?`);
-            messages.push(`Don't get mad at me, everyone was wondering the same thing.`);
+            messages.push(`Don't get mad at me, your friends wonder the same thing.`);
             messages.push(`Also, how many people have you put on ${getArtistName(tracks, 10)}?`);
-            messages.push(`Sounds like a ${getArtistName(tracks, 10)} fan...`);
+            messages.push(`Zero, probably`);
             messages.push('All jokes aside, your music taste is quite eclectic.');
             messages.push('It has a little bit of everything, and that makes it unique.');
             messages.push('I guess...')
