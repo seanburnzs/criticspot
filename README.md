@@ -29,4 +29,4 @@ The site is deployed with Vercel and uses a MongoDB database to hold Spotify use
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/seanburnzs/criticspot.git
+   https://github.com/seanburnzs/criticspot.git
