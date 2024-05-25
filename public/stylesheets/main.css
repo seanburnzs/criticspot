@@ -344,6 +344,7 @@ h1, h2 {
     }
 
     h1, h2 {
-        font-size: 5vw;
+        font-size: 6vw;
+        overflow: visible;
     }
 }
