@@ -323,9 +323,9 @@ h1, h2 {
 
 @media (max-width: 768px) {
     .centered-container-login {
-        width: 90%;
+        width: 95%;
         max-width: 100%;
-        padding: 20px;
+        padding: 10px;
         margin-top: 50px;
     }
 
