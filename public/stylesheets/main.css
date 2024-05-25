@@ -13,6 +13,22 @@ body {
     font-family: 'SofiaSans', sans-serif;
 }
 
+.aspect-ratio-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 53%;
+    overflow: hidden;
+}
+
+.aspect-ratio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .centered-container-login {
     display: flex;
     flex-direction: column;
@@ -42,33 +58,14 @@ h1, h2 {
     background-image: url('/images/desktopMessenger.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center center;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
+    background-position: top center;
+    width: 100%;
+    height: calc(100% - 40px);
+    position: absolute;
     top: 0;
     left: 0;
-    margin: 0;
     overflow: hidden;
     z-index: 10;
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .desktopMessenger-wrapper {
-        height: 100vh;
-        width: 100vw;
-        min-width: calc(100vh * 16 / 9);
-        background-size: 100% 100%;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .desktopMessenger-wrapper {
-        width: 100vw;
-        height: 100vh;
-        min-height: calc(100vw * 9 / 16);
-        background-size: 100% 100%;
-    }
 }
 
 @keyframes slide-up {
@@ -120,7 +117,8 @@ h1, h2 {
     flex-direction: column-reverse;
     justify-content: flex-start;
     width: 100%; /* Full width */
-    height: 91%; /* Full height */
+    height: 76.2%; /* Full height */
+    top: 15%;
     overflow-y: auto;
 }
 
@@ -133,26 +131,26 @@ h1, h2 {
     z-index: 1000;
 }
 
+.message-bubble-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 6%;
+    margin-bottom: 0.4vh;
+    max-width: 80vw;
+    position: relative;
+}
 
 .message-bubble {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 4px;
-    padding: 15px 12px;
-    margin-left: 6%;
-    margin-right: auto;
-    border-radius: 30px;
-    background-color: #3a414a; /* incoming */
+    background-color: #3a414a;
+    border-radius: 35px;
+    padding: 1vh 1vw;
     color: white;
+    display: inline-block;
     white-space: nowrap;
-    z-index: 1000;
-    transform: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: static;
-    font-size: 35px;
-    animation: slide-up 0.4s ease-out;
+    font-size: 1.5vw;
+    position: relative;
+    z-index: 1;
 }
 
     .message-bubble.new {
