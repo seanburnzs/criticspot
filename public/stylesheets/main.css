@@ -17,7 +17,7 @@ body {
     position: relative;
     width: 100%;
     height: 0;
-    padding-top: 53%;
+    padding-top: 53%; /* aspect ratio */
     overflow: hidden;
 }
 
@@ -92,19 +92,6 @@ h1, h2 {
     }
 }
 
-.iphone-screen {
-    background: transparent;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: none;
-    border-radius: 0;
-    overflow: hidden;
-}
-
 .bounding-container {
     position: relative;
     height: 100%;
@@ -117,7 +104,7 @@ h1, h2 {
     flex-direction: column-reverse;
     justify-content: flex-start;
     width: 100%; /* Full width */
-    height: 76.2%; /* Full height */
+    height: 76.2%;
     top: 15%;
     overflow-y: auto;
 }
@@ -321,26 +308,60 @@ h1, h2 {
     font-size: 2vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     .centered-container-login {
-        width: 95%;
+        width: 100%;
         max-width: 100%;
-        padding: 10px;
+        padding: 1px;
         margin-top: 50px;
     }
 
     .message-bubble {
-        font-size: 3vw;
-        padding: 10px 8px;
+        font-size: 4vw;
+        padding: 10px 11px;
+        white-space: normal;
     }
 
     .login-button {
-        padding: 10px 20px;
-        font-size: 4vw;
+        padding: 8px 12px;
+        font-size: 2vw;
+        border-radius: 15px;
     }
 
     .bottom-page-message {
-        font-size: 5vw;
+        font-size: 4vw;
+    }
+
+    .typing-indicator {
+        width: 15%;
+        height: 3%;
+        border-radius: 35px;
+    }
+
+    .aspect-ratio-container {
+        padding-top: 222%;
+    }
+
+    .desktopMessenger-wrapper {
+        background-image: url('/images/phoneMessenger.png') !important;
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 100%;
+        top: 0;
+    }
+
+    .messages-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        top: 11.5%;
+        overflow-y: auto;
+        padding-bottom: 40.5%;
+        padding-left: 2%;
     }
 
     h1, h2 {
