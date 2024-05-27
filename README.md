@@ -1,6 +1,6 @@
 # Project Description
 
-criticspot is a Spotify integration web application, designed to analyze a user's Spotify listening habits and provide critiques filled with wit, banter, and satirical humor.
+critiqueSource is a Spotify integration web application, designed to analyze a user's Spotify listening habits and provide critiques filled with wit, banter, and satirical humor.
 
 ## Development Stage
 
