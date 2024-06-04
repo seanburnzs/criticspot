@@ -4,7 +4,7 @@ critiqueSource is a Spotify integration web application, designed to analyze a u
 
 ## Development Stage
 
-In Progress
+In Progress (awaiting extension from spotify so that anyone can use the site)
 
 ## Technology Stack
 
